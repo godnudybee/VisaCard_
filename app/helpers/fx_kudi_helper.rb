@@ -1,0 +1,2 @@
+module FxKudiHelper
+end

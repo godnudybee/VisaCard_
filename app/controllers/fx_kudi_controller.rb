@@ -1,0 +1,2 @@
+class FxKudiController < ApplicationController
+end
