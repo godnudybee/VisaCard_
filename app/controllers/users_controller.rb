@@ -1,13 +1,10 @@
 class UsersController < ApplicationController
-
-
-
-	def utilisateurs
-        
-		@data = params
-    end
+  def utilisateurs    
+    @data = 1    
+		#@data = params
+  end
     
-    def u
-        
-    end
+  def u
+      
+  end
 end
