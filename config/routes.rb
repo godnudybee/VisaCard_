@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'utilisateur', to: 'users#utilisateurs'
   post 'utilisateur', to: 'users#utilisateurs'
-  get 'u', to: "users#u"
-  post 'u', to: "users#u"
+  get 'u', to: "fx_kudi#u"
+  post 'u', to: "fx_kudi#u"
 
   end
