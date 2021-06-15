@@ -2,6 +2,7 @@ class CreateTransactions < ActiveRecord::Migration[6.1]
   def change
     create_table :transactions do |t|
       t.integer :TansactionId
+      t.integer :carte_id
       t.decimal :TransactionAmount
       t.integer :Fee
       t.string :ProductName

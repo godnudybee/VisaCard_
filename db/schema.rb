@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_15_102316) do
+ActiveRecord::Schema.define(version: 2021_06_15_102502) do
 
   create_table "card_states", force: :cascade do |t|
     t.integer "carte_id"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2021_06_15_102316) do
 
   create_table "cartes", force: :cascade do |t|
     t.string "card_id"
-    t.string "string"
+    t.integer "user_id"
     t.string "masked_pan"
     t.decimal "card_balance"
     t.string "card_holder"
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 2021_06_15_102316) do
 
   create_table "transactions", force: :cascade do |t|
     t.integer "TansactionId"
+    t.integer "carte_id"
     t.decimal "TransactionAmount"
     t.integer "Fee"
     t.string "ProductName"

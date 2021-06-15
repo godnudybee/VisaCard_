@@ -2,7 +2,7 @@ class CreateCartes < ActiveRecord::Migration[6.1]
   def change
     create_table :cartes do |t|
       t.string :card_id
-      t.string :string
+      t.integer :user_id
       t.string :masked_pan
       t.decimal :card_balance
       t.string :card_holder
