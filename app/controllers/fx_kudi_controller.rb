@@ -2,7 +2,7 @@ class FxKudiController < ApplicationController
     def utilisateurs    
         #@data = params
         
-        render json: 1
+        render text: 1
     end
     
     def u
