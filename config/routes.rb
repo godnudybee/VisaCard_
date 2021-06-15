@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get 'utilisateur', to: 'users#utilisateurs'
   post 'utilisateur', to: 'users#utilisateurs'
   get 'u', to: "users#u"
+  post 'u', to: "users#u"
+
   end
